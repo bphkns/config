@@ -73,3 +73,14 @@ shift + alt - 7 : yabai -m window --space 7;
 ctrl + alt - q : brew services stop yabai
 ctrl + alt - s : brew services start yabai
 ctrl + alt - r : brew services restart yabai
+
+# -- Creating Spaces --
+
+# create new space
+ctrl + alt - n : yabai -m space --create
+
+# move space to display
+shift + alt - d : yabai -m space --display west
+shift + alt - f : yabai -m space --display east
+shift + alt - r : yabai -m space --display north
+shift + alt - y : yabai -m space --display south
