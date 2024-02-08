@@ -9,6 +9,12 @@ return {
         "typescript",
         "html",
         "yaml",
+        "json",
+        "css",
+        "scss",
+        "sql",
+        "dockerfile",
+        "prisma",
       })
     end,
   },

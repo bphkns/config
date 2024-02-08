@@ -31,10 +31,3 @@ vim.opt.updatetime = 50
 vim.opt.colorcolumn = "120"
 
 vim.g.mapleader = " "
-
--- local float = { focusable = true, style = "minimal", border = "rounded" }
---
--- vim.lsp.handlers["textDocument/hover"] = vim.lsp.with(vim.lsp.handlers.hover, float)
--- vim.lsp.handlers["textDocument/signatureHelp"] = vim.lsp.with(vim.lsp.handlers.signature_help, float)
---
--- vim.api.nvim_set_hl(0, "FloatBorder", { fg = "#d8bd92" })
