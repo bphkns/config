@@ -1,35 +1,41 @@
 #!/usr/bin/env bash
 
 # -----------------------------------
-# -------- Scripts
+# -------- Icons
 # -----------------------------------
-OPEN_MISSION_CONTROL="open -a 'Mission Control'"
+ERROR_ICON=􀏎
 
 
 # -----------------------------------
 # -------- Fields
 # -----------------------------------
-LABEL_FONT="$FONT:Heavy:12.0"
+ICON_FONT="$FONT:Bold:14.0"
+LABEL_FONT="$FONT:Semibold:11.0"
 
 
 # -----------------------------------
 # -------- Preferences
 # -----------------------------------
-front_app=(
+yabai=(
   update_freq=0
   display=active
-  script="$SCRIPT_DIR/front_app.sh"
-  click_script="$OPEN_MISSION_CONTROL"
+  script="$SCRIPT_DIR/yabai.sh"
   padding_left="$ITEM_MARGIN"
 
-  icon.background.drawing=on
+  icon="$ERROR_ICON"
+  icon.font="$ICON_FONT"
+  icon.color="$RED"
+
+  label='ERROR'
   label.font="$LABEL_FONT"
+  label.color="$RED"
+  label.y_offset=5
 )
 
 
 # -----------------------------------
 # -------- Setup
 # -----------------------------------
-sketchybar --add item  front_app left              \
-           --set       front_app "${front_app[@]}" \
-           --subscribe front_app front_app_switched
+sketchybar --add item  yabai left          \
+           --set       yabai "${yabai[@]}" \
+           --subscribe yabai skhd_space_type_changed skhd_window_type_changed yabai_window_focused yabai_loaded
