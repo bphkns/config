@@ -5,6 +5,12 @@ return {
     return {
       { "<leader> ", "<cmd>Telescope find_files<cr>", desc = "Find Files" },
       { "<leader>/", "<cmd>Telescope live_grep<cr>", desc = "Live Grep" },
+      -- shortcut for opening recent files
+      {
+        "<leader>r",
+        "<cmd>Telescope oldfiles<cr>",
+        desc = "Recent",
+      },
     }
   end,
 }

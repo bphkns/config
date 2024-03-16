@@ -13,7 +13,7 @@ return {
     ---@param opts cmp.ConfigSchema
     opts = function(_, opts)
       local cmp = require("cmp")
-
+      opts.completion.autocomplete = false
       opts.mapping = vim.tbl_extend("force", opts.mapping, {
         ["<Tab>"] = cmp.mapping(function(fallback)
           -- This little snippet will confirm with tab, and if no entry is selected, will confirm the first item
