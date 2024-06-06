@@ -19,6 +19,11 @@ return {
           },
         },
       },
+      inlay_hints = {
+        enabled = false,
+        show_parameter_hints = true,
+        parameter_hints_prefix = " ",
+      },
     },
   },
 }
