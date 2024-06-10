@@ -45,5 +45,8 @@ return {
   { "ellisonleao/gruvbox.nvim" },
   {
     "LazyVim/LazyVim",
+    opts = {
+      style = "moon",
+    },
   },
 }

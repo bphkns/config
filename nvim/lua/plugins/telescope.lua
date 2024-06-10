@@ -7,7 +7,7 @@ return {
       { "<leader>/", "<cmd>Telescope live_grep<cr>", desc = "Live Grep" },
       -- shortcut for opening recent files
       {
-        "<leader>r",
+        "<C-p>",
         "<cmd>Telescope oldfiles<cr>",
         desc = "Recent",
       },
